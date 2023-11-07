@@ -17,20 +17,17 @@ class SearchController extends AbstractController
     #[Route('/test/{id}', name: 'compagny_search_id')]
     public function searchid(Request $request, $id): Response
     {    
-     
-
         // Effectuez une requête GET vers l'API externe avec le nom saisi
-        $apiUrl = 'https://recherche-entreprises.api.gouv.fr/search?q=' . $id; // Adapt to your API
+        $apiUrl = 'https://recherche-entreprises.api.gouv.fr/search?q=' . $id; //On tape dans l'url de l'api en lui passant en paramettre $id correspondant au siren
         $client = HttpClient::create();
         $response = $client->request('GET', $apiUrl);
-        //$results = json_decode($results, true);
         
+        //On formate la reponse en array et on y accede (car sous la forme d'un array dans un array)
         $content = $response->toArray();
-       
         $response = $content['results'][0]; 
        
         return $this->render('results/index.html.twig', [
-            'results' =>  $response ,
+            'results' =>  $response , //On envoie l'array interresant a TWIG
         ]);
     }
 
@@ -38,8 +35,9 @@ class SearchController extends AbstractController
     #[Route('/search', name: 'compagny_search')]
     public function search(Request $request): Response
     {    
-        $results = '' ; 
+        $results = '' ; //On initialise les résultats afin de ne jamais envoyé une valeur null a TWIG
 
+        //On créé un forme a la volée
         $form = $this->createFormBuilder()
             ->add('name', TextareaType::class, [
                 'attr' => [
@@ -58,19 +56,18 @@ class SearchController extends AbstractController
             $data = $form->getData();
 
             // Effectuez une requête GET vers l'API externe avec le nom saisi
-            $apiUrl = 'https://recherche-entreprises.api.gouv.fr/search?q=' . $data['name']; // Adapt to your API
+            $apiUrl = 'https://recherche-entreprises.api.gouv.fr/search?q=' . $data['name']; 
             $client = HttpClient::create();
             $response = $client->request('GET', $apiUrl);
-            //$results = json_decode($results, true);
-            
+
+            // Retourne le resultat formatté
             $content = $response->toArray();
             $results = $content['results'] ;
-            //  dd($content);
         }
     
         return $this->render('search/index.html.twig', [
-            'searchFormType' => $form -> createView() ,
-            'results' =>  $results ,
+            'searchFormType' => $form -> createView() , //Retourne le formulaire a TWIG
+            'results' =>  $results , //Retourne les resultats a TWIG
         ]);
     
     }
