@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Calculateur de salaire{% endblock %}
+
+{% block body %}
+<h1>Calculateur de salaire</h1>
+
+{{ form_start(form) }}
+    {{ form_row(form.salaire_brut) }}
+    {{ form_row(form.contrat) }}
+    {{ form_row(form.calculer) }}
+{{ form_end(form) }}
+
+{% if resultats is not null %}
+    <h2>Résultats</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Type de Contrat</th>
+                <th>Salaire Brut</th>
+                <th>Salaire Net Avant Impôt</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if resultats.situationError is defined %}
+                <tr>
+                    <td colspan="3">Erreur : {{ resultats.situationError }}</td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td>{{ resultats.contrat }}</td>
+                    <td>{{ resultats.salaire_brut }} €</td>
+                    <td>{{ resultats.salaire_net_avant_impot }} €</td>
+                </tr>
+            {% endif %}
+        </tbody>
+    </table>
+{% endif %}
+
+{% endblock %}
