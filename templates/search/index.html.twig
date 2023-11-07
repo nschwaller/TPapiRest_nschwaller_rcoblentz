@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SearchController!{% endblock %}
+
+{% block body %}
+
+<h1>Rechercher entreprise</h1>
+
+{{ form_start(searchFormType) }}
+{{ form_widget(searchFormType) }}
+{{ form_end(searchFormType) }}
+
+<ul>
+    {% for result in results %}
+        <a href="{{path('compagny_search_id',{'id' : result.siren})}}"><li>{{ result.nom_raison_sociale|e }} {{ result.siren|e }} {{result.date_creation|e}}</li></a>
+    {% endfor %}
+</ul>
+
+{% endblock %}
