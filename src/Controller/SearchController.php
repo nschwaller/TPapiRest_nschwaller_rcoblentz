@@ -9,12 +9,39 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpClient\HttpClient;
+use Symfony\Component\HttpFoundation\Session\Session;
 
 
 class SearchController extends AbstractController
 {
 
-    #[Route('/test/{id}', name: 'compagny_search_id')]
+    #[Route('/download/{id}', name: 'download_id')]
+    public function download_id(Request $request, $id): Response
+    {    
+        // Effectuez une requête GET vers l'API externe avec le nom saisi
+        $apiUrl = 'https://recherche-entreprises.api.gouv.fr/search?q=' . $id; //On tape dans l'url de l'api en lui passant en paramettre $id correspondant au siren
+        $client = HttpClient::create();
+        $response = $client->request('GET', $apiUrl);
+        
+        //On formate la reponse en array et on y accede (car sous la forme d'un array dans un array)
+        $content = $response->toArray();
+        $response = $content['results'][0]; 
+
+         // Set the headers for file download
+         header('Content-Type: text/plain');
+         header("Content-Disposition: attachment; filename=\"{$id}.txt\"");
+         $file = var_export($response) ; 
+ 
+         // Output the content to the user's browser
+         echo $file;
+
+         return $this->render('results/index.html.twig', [
+            'results' =>  $response , //On envoie l'array interresant a TWIG
+        ]);
+    }
+
+
+    #[Route('/search/{id}', name: 'compagny_search_id')]
     public function searchid(Request $request, $id): Response
     {    
         // Effectuez une requête GET vers l'API externe avec le nom saisi
@@ -25,7 +52,12 @@ class SearchController extends AbstractController
         //On formate la reponse en array et on y accede (car sous la forme d'un array dans un array)
         $content = $response->toArray();
         $response = $content['results'][0]; 
-       
+
+        //Ajoute le Siren en sessionStorage
+        $session = new Session();
+        $session->start();
+        $session->set('id',$id);
+
         return $this->render('results/index.html.twig', [
             'results' =>  $response , //On envoie l'array interresant a TWIG
         ]);

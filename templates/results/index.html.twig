@@ -17,8 +17,11 @@
     <li>categorie_entreprise : {{results.categorie_entreprise}} </li>
    
 </ul>
+<ul>
+    <a href="{{path('download_id',{'id' : results.siren})}}"><button>Download</button></a>
+    <a href="{{path('compagny_search')}}"><button>Retour</button></a>
+</ul>
 
-<a href="{{path('compagny_search')}}"><button>Retour</button></a>
 
 
 {% endblock %}

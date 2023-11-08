@@ -1,0 +1,12 @@
+Array
+(
+    [situationError] => Array
+        (
+            [message] => 
+[ Erreur syntaxique ]
+➡️  Dans la règle "salarié . contrat"
+✖️  La référence "cdi" est introuvable.
+Vérifiez que l'orthographe et l'espace de nom sont corrects
+        )
+
+)
