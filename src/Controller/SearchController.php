@@ -33,17 +33,17 @@ class SearchController extends AbstractController
         $content = $response->toArray();
         $response = $content['results'][0]; 
 
-         // Set the headers for file download
-         header('Content-Type: text/plain');
-         header("Content-Disposition: attachment; filename=\"{$id}.txt\"");
-         $file = var_export($response) ; 
- 
-         // Output the content to the user's browser
-         echo $file;
+        // Écrit le contenu dans un fichier texte
+        $filePath = $this->getParameter('kernel.project_dir') . '/public/' . 'download/' . $id . '.json';
+        file_put_contents($filePath, print_r(json_encode($response), true));
 
-         return $this->render('results/index.html.twig', [
-            'results' =>  $response , //On envoie l'array interresant a TWIG
-        ]);
+        // Crée une réponse pour le téléchargement
+        $file = new Response();
+        $file->headers->set('Content-Type', 'application/json');
+        $file->headers->set('Content-Disposition', 'attachment; filename="' . $id . '.txt"');
+        $file->setContent(file_get_contents($filePath));
+
+        return $file;
     }
 
 
