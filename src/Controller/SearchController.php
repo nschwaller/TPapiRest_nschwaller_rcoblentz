@@ -10,10 +10,16 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Component\HttpFoundation\Session\Session;
-
+use App\Controller\EntrepriseUrssafController; 
 
 class SearchController extends AbstractController
 {
+
+    #[Route('/redirect_urssaf', name: 'redirect_urssaf')]
+    public function redirect_urssaf(Request $request): Response
+    {    
+        return $this->redirectToRoute('calcul_salaire', array(), 301);
+    }
 
     #[Route('/download/{id}', name: 'download_id')]
     public function download_id(Request $request, $id): Response
@@ -101,6 +107,7 @@ class SearchController extends AbstractController
             'searchFormType' => $form -> createView() , //Retourne le formulaire a TWIG
             'results' =>  $results , //Retourne les resultats a TWIG
         ]);
+
     
     }
 

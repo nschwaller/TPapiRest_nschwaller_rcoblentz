@@ -1,12 +1,250 @@
 Array
 (
-    [situationError] => Array
+    [responseCachedAt] => 1700672001723
+    [cacheExpiresAt] => 1700715201723
+    [evaluate] => Array
         (
-            [message] => 
-[ Erreur syntaxique ]
-➡️  Dans la règle "salarié . contrat"
-✖️  La référence "cdi" est introuvable.
-Vérifiez que l'orthographe et l'espace de nom sont corrects
+            [0] => Array
+                (
+                    [nodeValue] => 3419.33954475
+                    [unit] => Array
+                        (
+                            [numerators] => Array
+                                (
+                                    [0] => €
+                                )
+
+                            [denominators] => Array
+                                (
+                                    [0] => mois
+                                )
+
+                        )
+
+                    [traversedVariables] => Array
+                        (
+                            [0] => salarié . rémunération . net . à payer avant impôt
+                            [1] => dirigeant . assimilé salarié
+                            [2] => dirigeant
+                            [3] => dirigeant . régime social
+                            [4] => entreprise . catégorie juridique . EI . auto-entrepreneur
+                            [5] => entreprise . catégorie juridique
+                            [6] => entreprise . associés . unique
+                            [7] => entreprise . catégorie juridique . remplacements
+                            [8] => entreprise . catégorie juridique . EI
+                            [9] => entreprise . associés
+                            [10] => entreprise . catégorie juridique . EI . auto-entrepreneur . par défaut
+                            [11] => entreprise . imposition . IR . type de bénéfices
+                            [12] => entreprise . imposition . IR
+                            [13] => entreprise . catégorie juridique . SAS
+                            [14] => entreprise . catégorie juridique . remplacements . profession libérale reglementée
+                            [15] => entreprise . catégorie juridique . SELARL
+                            [16] => entreprise . activité . nature . libérale . réglementée
+                            [17] => déclaration charge sociales . nature de l'activité
+                            [18] => déclaration charge sociales
+                            [19] => entreprise . activité . nature . libérale
+                            [20] => entreprise . activité . nature
+                            [21] => entreprise . catégorie juridique . SELAS
+                            [22] => entreprise . imposition
+                            [23] => entreprise . catégorie juridique . SARL . EURL
+                            [24] => entreprise . catégorie juridique . SARL
+                            [25] => entreprise . catégorie juridique . SELARL . SELARL
+                            [26] => entreprise . associés . multiples
+                            [27] => dirigeant . indépendant . PL . métier . rattaché CIPAV
+                            [28] => dirigeant . indépendant
+                            [29] => dirigeant . gérant minoritaire
+                            [30] => salarié
+                            [31] => salarié . rémunération . net
+                            [32] => salarié . rémunération . net . sans revenus de remplacement
+                            [33] => salarié . rémunération . brut
+                            [34] => salarié . contrat . salaire brut
+                            [35] => salarié . rémunération . avantages en nature . montant
+                            [36] => salarié . rémunération . avantages en nature
+                            [37] => salarié . rémunération . primes
+                            [38] => salarié . rémunération . primes . activité
+                            [39] => salarié . rémunération . primes . activité . base
+                            [40] => salarié . convention collective . sport . primes
+                            [41] => salarié . convention collective . sport
+                            [42] => salarié . convention collective
+                            [43] => salarié . rémunération . primes . activité . conventionnelles
+                            [44] => salarié . convention collective . optique . prime d'ancienneté
+                            [45] => salarié . convention collective . optique
+                            [46] => salarié . rémunération . primes . ancienneté
+                            [47] => salarié . rémunération . primes . fin d'année . montant
+                            [48] => salarié . rémunération . primes . fin d'année
+                            [49] => salarié . rémunération . indemnités CDD
+                            [50] => salarié . contrat . CDD
+                            [51] => salarié . contrat
+                            [52] => salarié . rémunération . heures supplémentaires
+                            [53] => salarié . contrat . stage
+                            [54] => salarié . convention collective . compta . majoration heures supplémentaires
+                            [55] => salarié . convention collective . compta
+                            [56] => salarié . convention collective . HCR . majoration heures supplémentaires
+                            [57] => salarié . convention collective . HCR
+                            [58] => salarié . temps de travail . heures supplémentaires . majoration
+                            [59] => salarié . rémunération . heures complémentaires
+                            [60] => salarié . temps de travail . heures complémentaires
+                            [61] => salarié . contrat . apprentissage
+                            [62] => salarié . temps de travail . heures complémentaires . majoration
+                            [63] => salarié . rémunération . frais professionnels
+                            [64] => salarié . rémunération . frais professionnels . titres-restaurant . employeur
+                            [65] => salarié . rémunération . frais professionnels . titres-restaurant
+                            [66] => salarié . rémunération . frais professionnels . trajets domicile travail . employeur
+                            [67] => salarié . rémunération . frais professionnels . trajets domicile travail . transports publics . employeur
+                            [68] => salarié . rémunération . frais professionnels . trajets domicile travail . transports publics . montant
+                            [69] => salarié . rémunération . frais professionnels . trajets domicile travail . forfait mobilités durables . montant
+                            [70] => salarié . rémunération . frais professionnels . trajets domicile travail . prime de transport . montant
+                            [71] => date
+                            [72] => salarié . contrat . temps de travail . quotité
+                            [73] => période . semaines par mois
+                            [74] => période
+                            [75] => durée légale du travail
+                            [76] => salarié . contrat . temps de travail
+                            [77] => durée légale du travail . mensuelle
+                            [78] => salarié . activité partielle . retrait absence
+                            [79] => salarié . cotisations . salarié
+                            [80] => salarié . cotisations . vieillesse . salarié
+                            [81] => salarié . régimes spécifiques . impatriés
+                            [82] => situation personnelle . domiciliation fiscale à l'étranger
+                            [83] => salarié . cotisations . vieillesse
+                            [84] => salarié . cotisations . vieillesse . salarié . déplafonnée
+                            [85] => salarié . régimes spécifiques . intermittents du spectacle . artiste . réduction de taux
+                            [86] => salarié . régimes spécifiques . intermittents du spectacle . artiste
+                            [87] => salarié . contrat . CDD . motif
+                            [88] => salarié . régimes spécifiques . DFS . profession . journaliste . réduction de taux
+                            [89] => salarié . régimes spécifiques . DFS . profession . journaliste
+                            [90] => salarié . cotisations . vieillesse . salarié . déplafonnée . taux
+                            [91] => salarié . contrat . apprentissage . assiette réduite apprentissage
+                            [92] => salarié . régimes spécifiques . DFS
+                            [93] => salarié . cotisations . assiette
+                            [94] => salarié . cotisations . assiette . sans prévoyance
+                            [95] => salarié . cotisations . assiette forfaitaire . rémunération réelle
+                            [96] => salarié . régimes spécifiques . intermittents du spectacle . artiste . acteur de complément . assiette forfaitaire
+                            [97] => salarié . convention collective . sport . cotisations . assiette forfaitaire
+                            [98] => salarié . convention collective . sport . cotisations
+                            [99] => salarié . cotisations . assiette forfaitaire
+                            [100] => plafond sécurité sociale
+                            [101] => salarié . rémunération . frais professionnels . déductible
+                            [102] => salarié . rémunération . frais professionnels . titres-restaurant . déductible
+                            [103] => salarié . rémunération . frais professionnels . trajets domicile travail . déductible
+                            [104] => salarié . rémunération . frais professionnels . trajets domicile travail . transports publics . déductible
+                            [105] => salarié . rémunération . frais professionnels . trajets domicile travail . transports publics . taux employeur
+                            [106] => établissement . commune . département . outre-mer
+                            [107] => établissement . commune . département
+                            [108] => établissement . commune . département . outre-mer . Mayotte
+                            [109] => salarié . rémunération . frais professionnels . trajets domicile travail . prime de transport . déductible
+                            [110] => salarié . contrat . stage . gratification minimale
+                            [111] => salarié . cotisations . prévoyances . employeur . non déductible socialement
+                            [112] => salarié . cotisations . vieillesse . salarié . plafonnée
+                            [113] => salarié . cotisations . vieillesse . salarié . plafonnée . taux
+                            [114] => salarié . temps de travail . plafond sécurité sociale
+                            [115] => salarié . temps de travail . effectif . quotité
+                            [116] => salarié . temps de travail . effectif
+                            [117] => salarié . temps de travail
+                            [118] => salarié . activité partielle . heures chômées
+                            [119] => salarié . temps de travail . durée légale . mensuelle
+                            [120] => salarié . cotisations . vieillesse . employeur
+                            [121] => salarié . cotisations . vieillesse . employeur . déplafonnée
+                            [122] => salarié . cotisations . vieillesse . employeur . déplafonnée . taux
+                            [123] => salarié . cotisations . vieillesse . employeur . plafonnée
+                            [124] => salarié . cotisations . vieillesse . employeur . plafonnée . taux
+                            [125] => salarié . cotisations . maladie . salarié
+                            [126] => salarié . cotisations . maladie . salarié . taux
+                            [127] => salarié . régimes spécifiques . alsace moselle
+                            [128] => salarié . cotisations . retraite complémentaire . salarié
+                            [129] => salarié . cotisations . CEG . salarié
+                            [130] => salarié . cotisations . chômage . salarié
+                            [131] => salarié . cotisations . CSG-CRDS
+                            [132] => salarié . cotisations . CSG-CRDS . CSG
+                            [133] => salarié . cotisations . CSG-CRDS . CSG . déductible
+                            [134] => salarié . cotisations . CSG-CRDS . CSG . déductible . taux
+                            [135] => salarié . cotisations . CSG-CRDS . assiette de base
+                            [136] => salarié . cotisations . CSG-CRDS . assiette de base . assiette abattue
+                            [137] => salarié . cotisations . prévoyances . employeur
+                            [138] => salarié . cotisations . prévoyances . santé . employeur
+                            [139] => salarié . convention collective . BTP . catégorie . ouvrier . prévoyance complémentaire . employeur
+                            [140] => salarié . convention collective . BTP . catégorie . ouvrier
+                            [141] => salarié . convention collective . BTP
+                            [142] => salarié . convention collective . BTP . catégorie . etam . prévoyance complémentaire . employeur
+                            [143] => salarié . convention collective . BTP . catégorie . etam
+                            [144] => salarié . convention collective . BTP . catégorie . cadre . prévoyance complémentaire . employeur
+                            [145] => salarié . convention collective . BTP . catégorie . cadre
+                            [146] => salarié . convention collective . HCR . prévoyance conventionnelle . employeur
+                            [147] => salarié . convention collective . optique . prévoyance . employeur
+                            [148] => salarié . convention collective . sport . cotisations . prévoyance . employeur
+                            [149] => salarié . cotisations . prévoyances . conventionnelle . employeur
+                            [150] => salarié . rémunération . net . imposable . heures supplémentaires et complémentaires défiscalisées
+                            [151] => salarié . cotisations . CSG-CRDS . CSG . non déductible
+                            [152] => salarié . cotisations . CSG-CRDS . CSG . non déductible . taux
+                            [153] => salarié . cotisations . CSG-CRDS . CRDS
+                            [154] => salarié . cotisations . CSG-CRDS . CRDS . taux
+                            [155] => salarié . cotisations . APEC . salarié
+                            [156] => salarié . cotisations . APEC
+                            [157] => salarié . cotisations . prévoyances . salarié
+                            [158] => salarié . cotisations . prévoyances . santé . salarié
+                            [159] => salarié . convention collective . BTP . catégorie . ouvrier . prévoyance complémentaire . salarié
+                            [160] => salarié . convention collective . BTP . catégorie . etam . prévoyance complémentaire . salarié
+                            [161] => salarié . convention collective . BTP . catégorie . cadre . prévoyance complémentaire . salarié
+                            [162] => salarié . convention collective . HCR . prévoyance conventionnelle . salarié
+                            [163] => salarié . convention collective . optique . prévoyance . salarié
+                            [164] => salarié . convention collective . sport . cotisations . prévoyance . salarié
+                            [165] => salarié . cotisations . prévoyances . conventionnelle . salarié
+                            [166] => salarié . cotisations . exonérations . salarié
+                            [167] => salarié . rémunération . revenus de remplacement . net
+                            [168] => salarié . rémunération . revenus de remplacement
+                            [169] => salarié . activité partielle . indemnités
+                            [170] => salarié . rémunération . revenus de remplacement . cotisation maladie
+                            [171] => salarié . cotisations . CSG-CRDS . revenus de remplacement
+                            [172] => salarié . cotisations . CSG-CRDS . revenus de remplacement . CSG déductible
+                            [173] => salarié . cotisations . CSG-CRDS . revenus de remplacement . CSG déductible . plafond
+                            [174] => SMIC
+                            [175] => SMIC . horaire
+                            [176] => salarié . cotisations . CSG-CRDS . revenus de remplacement . CSG non déductible
+                            [177] => salarié . cotisations . CSG-CRDS . revenus de remplacement . CSG non déductible . plafond
+                            [178] => salarié . cotisations . CSG-CRDS . revenus de remplacement . CRDS
+                            [179] => salarié . rémunération . frais professionnels . titres-restaurant . montant
+                        )
+
+                    [missingVariables] => Array
+                        (
+                            [entreprise . imposition . IR . type de bénéfices] => 10682285
+                            [entreprise . catégorie juridique . EI . auto-entrepreneur] => 557591080
+                            [entreprise . catégorie juridique] => 374755877
+                            [entreprise . associés . unique] => 105692718
+                            [entreprise . catégorie juridique . EI] => 228647396
+                            [entreprise . associés] => 78546880
+                            [entreprise . catégorie juridique . remplacements . profession libérale reglementée] => 394716052
+                            [entreprise . activité . nature . libérale . réglementée] => 223058547
+                            [entreprise . activité . nature] => 374755877
+                            [entreprise . catégorie juridique . SELARL] => 450604542
+                            [entreprise . catégorie juridique . SELAS] => 290923142
+                            [entreprise . catégorie juridique . SAS] => 128846521
+                            [entreprise . imposition] => 96910241
+                            [entreprise . catégorie juridique . SARL] => 199106337
+                            [dirigeant . gérant minoritaire] => 19464762
+                            [dirigeant . indépendant] => 7488657
+                            [dirigeant . assimilé salarié] => 1899808
+                            [salarié . rémunération . avantages en nature] => 19895
+                            [salarié . rémunération . primes . activité . base] => 19894
+                            [salarié . convention collective] => 207582
+                            [salarié . rémunération . primes . fin d'année] => 19894
+                            [salarié . rémunération . frais professionnels . titres-restaurant] => 21983
+                            [salarié . rémunération . frais professionnels . trajets domicile travail . transports publics . montant] => 106894
+                            [salarié . rémunération . frais professionnels . trajets domicile travail . forfait mobilités durables . montant] => 68614
+                            [salarié . rémunération . frais professionnels . trajets domicile travail . prime de transport . montant] => 135430
+                            [salarié . régimes spécifiques . DFS] => 928
+                            [établissement . commune . département] => 118076
+                            [établissement . commune . département . outre-mer] => 66936
+                            [salarié . régimes spécifiques . alsace moselle] => 352
+                            [situation personnelle . domiciliation fiscale à l'étranger] => 580
+                        )
+
+                )
+
+        )
+
+    [warnings] => Array
+        (
         )
 
 )

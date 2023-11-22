@@ -51,7 +51,7 @@ class EntrepriseUrssafController extends AbstractController
                             'valeur' => $salaireBrut,
                             'unité' => '€ / mois'
                         ],
-                        'salarié . contrat' => $typeContrat
+                        'salarié . contrat' => "'$typeContrat'" 
                     ],
                     'expressions' => [
                         'salarié . rémunération . net . à payer avant impôt'
@@ -60,7 +60,6 @@ class EntrepriseUrssafController extends AbstractController
             ]);
 
             $responseData = $response->toArray();
-
             // Enregistrez la réponse complète pour le débogage
             file_put_contents('api_response.log', print_r($responseData, true));
 

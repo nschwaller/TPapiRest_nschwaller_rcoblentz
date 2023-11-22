@@ -20,10 +20,10 @@ class UrssafFormType extends AbstractType
             ])
             ->add('contrat', ChoiceType::class, [
                 'choices' => [
-                    'CDI' => 'cdi',
+                    'CDI' => 'CDI',
                     'Stage' => 'stage',
-                    'Alternance' => 'alternance',
-                    'CDD' => 'cdd',
+                    'Alternance' => 'apprentissage',
+                    'CDD' => 'CDD',
                 ],
                 'label' => 'Type de Contrat'
             ])
