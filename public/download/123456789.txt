@@ -1,0 +1,1 @@
+{"Siren":123456789,"Raison_sociale":"bitehb","Adresse":{"Num":3,"Voie":"5 rue deiuhphhu","Code_postale":12345,"Ville":"lyon","GPS":{"Latitude":99.99,"Longitude":99.99}}}
